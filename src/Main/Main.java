@@ -1,11 +1,13 @@
 package Main;
 
-import dictionary.Dictionary;
+import Reading_txt.ReadTxtClass;
 
 public class Main {
 
     public static void main(String[] args) {
-        Dictionary dictionary = new Dictionary();
+        ReadTxtClass readTxt = new ReadTxtClass("dictionary.txt");
+        readTxt.ScanFile_AddWords();
+        /* Dictionary dictionary = new Dictionary();
 // you can add first parameter  word, second parameter meaning;
         dictionary.addWord("hunter", "av");
         dictionary.addWord("hunt", "avlamak");
@@ -18,7 +20,12 @@ public class Main {
         dictionary.SearchWord("hunt");
         dictionary.SearchWord("hunter");
 
-        dictionary.PrintAllWordsWithMeanings();
+        dictionary.PrintAllWordsWithMeanings();*/
+        //Dictionary dictionary = new Dictionary();
+
+        //dictionary.ReadTxt_And_TakeWordsTo_Dictionary("sozluk2.txt");
+
+        //   readTxt.ScanFile();
     }
 
 }
