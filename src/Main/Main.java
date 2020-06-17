@@ -1,31 +1,27 @@
 package Main;
 
 import Reading_txt.ReadTxtClass;
+import dictionary.Dictionary;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
+
         ReadTxtClass readTxt = new ReadTxtClass("dictionary.txt");
-        readTxt.ScanFile_AddWords();
-        /* Dictionary dictionary = new Dictionary();
-// you can add first parameter  word, second parameter meaning;
-        dictionary.addWord("hunter", "av");
-        dictionary.addWord("hunt", "avlamak");
-        dictionary.addWord("hunt", "oyunuda var");
-        dictionary.addWord("ghost", "hayalet");
-        dictionary.addWord("sugar", "şeker");
-        dictionary.addWord("ghost", "hayalet");
-        dictionary.addWord("car", "araba");
+        Dictionary dictionary = readTxt.ScanFile_AddWords();
+        dictionary.PrintAllWordsWithMeanings();
+        System.out.println("\nif you want to exit press -1 ");
 
-        dictionary.SearchWord("hunt");
-        dictionary.SearchWord("hunter");
+        System.out.print("-->");
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
 
-        dictionary.PrintAllWordsWithMeanings();*/
-        //Dictionary dictionary = new Dictionary();
-
-        //dictionary.ReadTxt_And_TakeWordsTo_Dictionary("sozluk2.txt");
-
-        //   readTxt.ScanFile();
+        while (!input.equals("-1")) {
+            dictionary.SearchWord(input);
+            System.out.print("-->");
+            input = scanner.nextLine();
+        }
     }
 
 }

@@ -10,7 +10,6 @@ public class Dictionary {
     String word;
     public Node first;
     int counterOfWordIndex = 0;
-//String 
 
     public Dictionary() {
         this.first = null;
@@ -25,10 +24,8 @@ public class Dictionary {
     }
 
     public void addWord(String word, String Meaning) {
-        //  word = word.toLowerCase();
         word = word.trim();
         Meaning = Meaning.trim();
-        //showMessage(" boşluk var mı =--> |" + word + "|" + "|" + Meaning + "|");
         this.word = word;
 
         if (this.first == null) {
@@ -76,6 +73,7 @@ public class Dictionary {
         BUT  if I add new words then I dont search  any word  
             SO  SearchWord is false (while I add new word)  which is used to make new Path
          */
+
         switch (Char) {
             case 'a':
             case 'A':
@@ -472,12 +470,15 @@ public class Dictionary {
     }
 
     public void SearchWord(String word) { // if there is any word with meaning this function returns  meaning
+        word = word.trim();
         SearcWord = true;
         Node temp = this.first;
+
         if (this.first == null) {
             System.out.println("No words have been added yet");
         } else {
             counterOfWordIndex = 0;
+
             while (counterOfWordIndex < word.length()) {
                 temp = GoToLastIndex(word.charAt(counterOfWordIndex), temp);//temp=temp.(A-Z)_next;
                 counterOfWordIndex++;
@@ -485,9 +486,12 @@ public class Dictionary {
                     System.out.println(word + " --> The word you are looking for has not been added ");
                     return;
                 }
+
             }
+
             if (temp.Meaning != null) {
-                System.out.println("the meaning of the word you are looking for : " + temp.Meaning.data);
+                //System.out.println("the meaning of the word you are looking for : " + temp.Meaning.data);
+                System.out.println(word + " : " + temp.Meaning.data);
             } else {
                 System.out.println(word + " --> The word you are looking for has not been added");
             }
