@@ -513,9 +513,9 @@ public class Dictionary {
             IntegerList.add(0, 0);
 
             counterOfWordIndex = 0; // alfabe
-            while (IntegerList.get(0) < 26) {
+            while (IntegerList.get(0) < 58) {
 
-                if (counterOfWordIndex == 26) {
+                if (counterOfWordIndex == 58) {
                     if (temp.before == null) {
                         return;
                     }
@@ -532,7 +532,7 @@ public class Dictionary {
                     }
                 } else {
                     Node tempControl = null;
-                    while (counterOfWordIndex < 26) {
+                    while (counterOfWordIndex < 58) {
 
                         tempControl = GoToLastIndex(new CharacterCalculation().CharacterCalculate(counterOfWordIndex), temp);
 
