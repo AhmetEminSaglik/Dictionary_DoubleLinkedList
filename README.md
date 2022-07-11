@@ -6,7 +6,7 @@ Hello guys.
 
 <h3> WHAT WE HAVE ?</h3> 
 <b>dictionary.txt</b> file has 5721 lines with words with meanings. 
-<br><br><br>
+<br><br>
 
 <h3> SOLUTION : </h3> 
 3 ways may come to you your mind.
