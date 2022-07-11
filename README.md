@@ -4,11 +4,11 @@ Hello guys.
 
 <h4> QUESTION :</h4>  How can be get as soon as possible  meanings of words from dictionary.txt file when words are entered?
 
-<h3> WHAT WE HAVE ?</h3> 
+<h3> WHAT DO WE HAVE ?</h3> 
 <b>dictionary.txt</b> file has 5721 lines with words with meanings. 
 <br><br>
 
-<h3> SOLUTION : </h3> 
+<h3> WHAT IS SOLUTION : </h3> 
 3 ways may come to you your mind.
 <br><br>
 1-) May use Arrays accordingto maximum character but this will use maybe millions/billions times more than necessary memory.
