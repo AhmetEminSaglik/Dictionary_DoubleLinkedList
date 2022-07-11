@@ -20,4 +20,7 @@ Let's say our computer run slowly. First word's meaning is found 1 second later.
 <br><br>
 3-) LinkedList is the best answer among these ways because the maximum time will be just word's character number. There will be a root Node and all words will be get by it.
 
+<br><br>
+<b>So  Third option is our solution.</b>
+
 
